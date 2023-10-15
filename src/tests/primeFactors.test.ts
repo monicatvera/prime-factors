@@ -10,11 +10,13 @@
 */
 
 function getPrimeFactorsFor(number: number) {
-    return [2];
+    const factors = [2];
+    return factors;
 }
   
 describe('The prime factors', () => {
     it('finds the prime composition of the given number', () => {
       expect(getPrimeFactorsFor(2)).toEqual([2]);
+      expect(getPrimeFactorsFor(2 * 2)).toEqual([2, 2]);
     });
 });
