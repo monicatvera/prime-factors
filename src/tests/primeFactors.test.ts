@@ -19,6 +19,7 @@ function getPrimeFactorsFor(number: number) {
     if (remainder > 1) {
         return factors.concat(getPrimeFactorsFor(remainder));
     }
+    
     return factors;
 }
   
