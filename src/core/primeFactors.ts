@@ -1,10 +1,12 @@
 function findSmallestPrime(number: number) {
+    if (number === 1) return 1;
+    
     let factor = 2;
 
     while (number % factor !== 0) {
       ++factor;
     }
-    
+
     return factor;
 }
   
